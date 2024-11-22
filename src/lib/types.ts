@@ -6,7 +6,7 @@ export interface Invoice {
     tax: number;
     totalAmount: number;
     date: string;
-    status?: 'pending' | 'paid';
+    status: 'pending' | 'paid';
   }
   
   export interface Product {
@@ -15,14 +15,13 @@ export interface Invoice {
     unitPrice: number;
     tax: number;
     priceWithTax: number;
-    discount?: number;
   }
   
   export interface Customer {
     name: string;
     phoneNumber: string;
     totalPurchaseAmount: number;
-    company?: string;
+    company: string;
   }
   
   export interface AppState {
@@ -31,9 +30,4 @@ export interface Invoice {
     customers: Customer[];
     loading: boolean;
     error: string | null;
-  }
-  
-  export interface FileData {
-    type: string;
-    content: string | ArrayBuffer | null;
   }

@@ -27,3 +27,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Radix UI Tab Styles */
+.TabsTrigger[data-state='active'] {
+  @apply font-semibold;
+}
+
+.TabsContent {
+  @apply outline-none;
+}
+
+.TabsContent[data-state='inactive'] {
+  @apply hidden;
+}
